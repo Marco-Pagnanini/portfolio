@@ -153,6 +153,8 @@ export type Project = {
   graph: ProjectGraph;
   link?: string;
   accent: string; // gradient classes used on the home cards
+  color: string; // hex accent used by the animated graph
+  gradient: string; // tailwind gradient classes for the themed heading
 };
 
 export const projects: Project[] = [
@@ -214,6 +216,8 @@ export const projects: Project[] = [
     },
     link: "https://github.com/Marco-Pagnanini/CigarClubApp",
     accent: "from-amber-500/20 to-orange-500/5",
+    color: "#f59e0b",
+    gradient: "from-amber-200 via-amber-400 to-orange-500",
   },
   {
     slug: "repay",
@@ -259,6 +263,8 @@ export const projects: Project[] = [
     },
     link: "https://github.com/Marco-Pagnanini/Repay",
     accent: "from-sky-500/20 to-indigo-500/5",
+    color: "#38bdf8",
+    gradient: "from-sky-200 via-sky-400 to-indigo-500",
   },
   {
     slug: "urban-ramp-detection",
@@ -314,6 +320,8 @@ export const projects: Project[] = [
       ],
     },
     accent: "from-fuchsia-500/20 to-purple-500/5",
+    color: "#d946ef",
+    gradient: "from-fuchsia-200 via-fuchsia-400 to-purple-500",
   },
 ];
 

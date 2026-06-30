@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#stack", label: "Stack" },
-  { href: "#progetti", label: "Progetti" },
-  { href: "#architettura", label: "Architettura" },
-  { href: "#percorso", label: "Percorso" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/#stack", label: "Stack" },
+  { href: "/#progetti", label: "Progetti" },
+  { href: "/#architettura", label: "Architettura" },
+  { href: "/#percorso", label: "Percorso" },
+  { href: "/#contatti", label: "Contatti" },
 ];
 
 export function Navbar() {
@@ -31,7 +31,7 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" className="group flex items-center gap-2">
+        <a href="/" className="group flex items-center gap-2">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-white to-neutral-400 font-bold text-black">
             M
           </span>
@@ -53,7 +53,7 @@ export function Navbar() {
         </nav>
 
         <a
-          href="#contatti"
+          href="/#contatti"
           className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10"
         >
           Parliamone

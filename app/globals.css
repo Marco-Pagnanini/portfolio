@@ -58,6 +58,13 @@
   }
 }
 
+/* Traveling-path flow used by the project ServiceGraph edges */
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
 /* Loader used by the <SplineScene /> Suspense fallback */
 .loader {
   width: 48px;
